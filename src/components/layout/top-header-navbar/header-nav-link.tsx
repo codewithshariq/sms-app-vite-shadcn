@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import { BadgeCount } from "@/components/ui/badge-count";
 import { TypographySmall } from "@/components/ui/typography";
 import clsx from "clsx";

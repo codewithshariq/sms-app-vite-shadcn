@@ -53,7 +53,8 @@ function RootLayout() {
     queryKey: ["get-me"],
     queryFn: async () => {
       const response = await getUser();
-      updateUser(response.data);
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      updateUser(response.data as any);
       return response.data;
     },
   });

@@ -45,7 +45,8 @@ export const ActiveNumbersPage = () => {
         ...line,
         smses,
       };
-    });
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    }) as any;
   }, [linesData, smsData]);
 
   const modalsState = useModalsSelectedAndOpenState();
